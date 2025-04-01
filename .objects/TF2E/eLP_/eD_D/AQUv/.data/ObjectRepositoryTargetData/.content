@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RNLbkzZAbk-lQ-neD5BbNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="f29e7bb4-858e-4593-819c-019606541e6a" CvElementArea="954, 139, 21, 21" CvType="CloseButton" DesignTimeRectangle="953, 138, 24, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='modal-close' tag='I' type='' class='icon-cross-small' aaname='' /&gt;" Guid="7fa5a532-a986-413a-b209-19289dd88a0f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b4817fc67699a033a78f80c0e271a30c.png" xmlns="">0gg0uyiJ2xUGAuuXH02aTBg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

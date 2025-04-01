@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="teWP-42BS02Y6Q8bkm95-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="974635d5-4bcd-4eed-aa7a-a2be72b19dab" DesignTimeRectangle="2117, 536, 431, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='hr-button hr-button-primary hr-button-full-width' aaname='Login' check:innerText='Login' /&gt;" Guid="b6598269-1ac0-4a1f-8896-e5468e45e7c6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d39cc0bc30623b7666b8676f4a38db94.png" xmlns="">0LTiREPigf02pIIjdT_6C-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

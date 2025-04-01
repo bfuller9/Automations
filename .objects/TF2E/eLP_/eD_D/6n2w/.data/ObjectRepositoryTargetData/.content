@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Eqo3IjaVo0uxXQhjSzWlcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="22fc9791-3d97-4322-b75b-1982d78ba943" DesignTimeRectangle="2117, 389, 181, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='' aaname='' check:innerText='03/01/2025 - 03/31/2025' /&gt;" Guid="01f830ba-65ce-4d2b-9e00-2c71eae451d5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="22fc9791-3d97-4322-b75b-1982d78ba943" CvElementArea="2114, 389, 18, 18" CvType="Icon" DesignTimeRectangle="2117, 391, 14, 14" FuzzySelectorArgument="&lt;webctrl class='icon-calendar' tag='SPAN' type='' aaname='' /&gt;" Guid="a220c738-f3ea-451d-9c50-9d8440f98bf9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVDhP3ZM/a8JAGIf9pAHJIhJIhoAE/0AFHSyCQwsp9iukQyI4JIiGUAfBD6BDQeJyELB0CS5PCQpN1Wva0kLp8MCPl+O5e+/eK6Xpnp+gdFr4Lr8tinHrXdxNrrbxaNQ94rO1l0TbiLtWE023UMsGqpblI5qJUjYPuXXP41YqShi3DWrDKbNwzEBvMhhFzMIjIxtNt3HDiGB4hdL2EZdFMY5lcDvP8jOryZTVLrfrbk0wWfOS5bmNYnk8fSS69hOEKMC/KRap1dy9yKiaxaJDawV8prV/KUoIOgaVvvc2OxKcvoXSkc7RnlQscXrd81c6odF7YCHen1Ly177O3xO9Av8ni9aB02goAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4f7eab976676c894ff7fe2e92cf5d77a.png" xmlns="">0M_ho91AMXU6FlnYQO-TD2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

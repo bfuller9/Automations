@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="olJyNU4GukCy0DT6FUg1mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" DesignTimeRectangle="8, 87, 1234, 97" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' parentid='app-main-container' tag='DIV' class='row align-middle hr-header-wrapper  ' aaname='' /&gt;" Guid="59b27b0d-b6d0-46a3-bd6a-f9523d5e8d4f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3dcda974097d7833e0ff0664460a9590.png" xmlns="">09_-c_LONP0qSLZcYQ6l1tQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

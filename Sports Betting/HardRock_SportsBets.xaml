@@ -1,0 +1,472 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HardRock_SportsBets" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="HardRock_SportsBets_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HardRock_SportsBets" sap:VirtualizedContainerService.HintSize="1916,5453" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_9</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - Hard Rock Sign In" sap:VirtualizedContainerService.HintSize="1132,5430" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="HardRock_Email" />
+        <Variable x:TypeArguments="ss:SecureString" Name="HardRock_Password" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="HardRock_Login" CacheStrategy="None" DisplayName="Get Credential" FolderPath="brianfuller3916@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="1098,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[HardRock_Password]" Username="[HardRock_Email]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Hard Rock Bet" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1098,5172" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1064,4932" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="VerificationCode" />
+                <Variable x:TypeArguments="sd:DataTable" Name="dt_HardLifetime" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="ee84e701-83e4-453c-a633-95524b66fc15" ContentHash="es4oWcabsk665FKCyF_iLw" CvElementArea="2436, 169, 79, 53" CvTextArea="2453, 187, 44, 19" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="2438, 171, 75, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='login-btn' tag='BUTTON' type='' class='hr-button hr-button-primary' aaname='Login' check:innerText='Login' /&gt;" Guid="0c490187-b688-4260-b855-407acc9363d8" InformativeScreenshot="23e67724186462e02be9ec9b6fda65f6.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/98KK7mRuNUy0DAcnMxkIrQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Text="[HardRock_Email]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" ContentHash="XN64JRF6BkaaL39D2PYkaQ" CvElementArea="2116, 341, 431, 50" CvType="InputBox" DesignTimeRectangle="2117, 342, 431, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='login-username' tag='INPUT' type='text' class='hr-input input-empty ' aaname='Email' /&gt;" Guid="3882d34c-3e5a-4a3c-b370-13483eb860dc" InformativeScreenshot="36b13480a3cc7bfcde77fd604a7eee1e.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/EaoPRFMyRk29b5W_ci41Vw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" DesignTimeRectangle="2132, 352, 58, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' type='' class='input-label' check:innerText='Email' /&gt;" Guid="9b9431bf-2f08-4fb7-9135-4d6e2b45ac7b" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" SecureText="[HardRock_Password]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" ContentHash="y9F241Q5L0GdF_dd69hxlw" CvElementArea="2117, 413, 430, 49" CvType="InputBox" DesignTimeRectangle="2117, 414, 431, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='login-password' tag='INPUT' type='password' class='hr-input input-empty login-input' aaname='Password' /&gt;" Guid="9a77a39f-8f61-4193-b8cd-4ea6de9b134a" InformativeScreenshot="81e5cca234b3fb60345973d1cb238a5c.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/jnR2EgnBWU-rzaN1IEFiRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" DesignTimeRectangle="2132, 424, 88, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='input-label' check:innerText='Password' /&gt;" Guid="54fcff3e-4e43-4ef1-b58e-38e53818f0f0" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="974635d5-4bcd-4eed-aa7a-a2be72b19dab" ContentHash="teWP-42BS02Y6Q8bkm95-g" DesignTimeRectangle="2117, 536, 431, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='hr-button hr-button-primary hr-button-full-width' aaname='Login' check:innerText='Login' /&gt;" Guid="b6598269-1ac0-4a1f-8896-e5468e45e7c6" InformativeScreenshot="d39cc0bc30623b7666b8676f4a38db94.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/Cy87nATF3kOvKqgNDtUDzw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1030,962" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:20">
+                <ui:RetryScope.ActivityBody>
+                  <ActivityAction>
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="988,755" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="HardRock_AccountFound">
+                          <Variable.Default>
+                            <Literal x:TypeArguments="x:Boolean" Value="True" />
+                          </Variable.Default>
+                        </Variable>
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Check App State 'Code'" Exists="[HardRock_AccountFound]" sap:VirtualizedContainerService.HintSize="954,695" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Asking for Verification Code.&quot; + HardRock_AccountFound.ToString]" />
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Never'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="1b6a3c8f-7ee2-4fec-89ad-f4daa12cbdc7" ContentHash="05vLJy6yp0eMSFPlVeezjQ" CvElementArea="237, 269, 74, 42" CvTextArea="254, 284, 37, 12" CvTextArgument="Never" CvType="Button" DesignTimeRectangle="239, 271, 68, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Save password?' role='alert' /&gt;&lt;ctrl name='Never' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save password?' role='alert' /&gt;&lt;ctrl name='Never' role='push button' automationid='' check:text='Never' /&gt;" Guid="bcd73ad3-6b44-4f3e-8e49-b7be6ebca169" InformativeScreenshot="cec9548e89c3fbd06c7fd107ea833bef.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/1TcDMcPRg0eqJ5QT_IlhrQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Save password?' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Never allow Chrome to save account information.&quot;]" />
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="cc21e70c-73ea-4b8f-9893-ee7d9da2db3f" ContentHash="DVOo_Z-q90GdPvs8g3cWOA" CvElementArea="903, 329, 330, 48" CvType="InputBox" DesignTimeRectangle="902, 330, 331, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='hr-input input-empty ' aaname='' /&gt;" Guid="e9a3340c-e860-4de9-ae8d-c5e30e3be224" InformativeScreenshot="e82f848504ff50a58bcf9952ffb96e15.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/VJ9s1c7iYUOJz5n04GdP_Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="cc21e70c-73ea-4b8f-9893-ee7d9da2db3f" DesignTimeRectangle="917, 340, 56, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Code' tag='LABEL' type='' class='input-label' check:innerText='Code' /&gt;" Guid="460f12af-e813-4f28-bff1-cd8f6ca5095a" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:RetryScope.ActivityBody>
+                <ui:RetryScope.Condition>
+                  <ActivityFunc x:TypeArguments="x:Boolean" />
+                </ui:RetryScope.Condition>
+              </ui:RetryScope>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1030,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please provide ther verification code sent to your mobile device." Title="Hard Rock Verification Code">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">[VerificationCode]</OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Text="[VerificationCode]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="c8f0424b-915e-42bd-ad0a-8a81dd31a7ad" ContentHash="FTZka3RGqkO-4pKY-jTwVg" DesignTimeRectangle="2117, 338, 431, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='hr-input input-empty ' aaname='' /&gt;" Guid="cf66a000-2aed-445c-9030-dfe21df7fc1f" InformativeScreenshot="7fd6531dee3c129b127d1eb2f552722b.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/sjS7n4KnP0ac2jjANZ1rQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NCheckState DisplayName="Check App State 'Balance$76.42BF'" sap:VirtualizedContainerService.HintSize="1030,704" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The location verification plugin is downloaded.&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I modal-close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="f29e7bb4-858e-4593-819c-019606541e6a" ContentHash="RNLbkzZAbk-lQ-neD5BbNA" CvElementArea="954, 139, 21, 21" CvType="CloseButton" DesignTimeRectangle="953, 138, 24, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='modal-close' tag='I' type='' class='icon-cross-small' aaname='' /&gt;" Guid="7fa5a532-a986-413a-b209-19289dd88a0f" InformativeScreenshot="b4817fc67699a033a78f80c0e271a30c.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/AQUvqH4EjEm4cxVjRIZSnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Do not have the location verification plugin downloaded.&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" ContentHash="olJyNU4GukCy0DT6FUg1mg" DesignTimeRectangle="8, 87, 1234, 97" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' parentid='app-main-container' tag='DIV' class='row align-middle hr-header-wrapper  ' aaname='' /&gt;" Guid="59b27b0d-b6d0-46a3-bd6a-f9523d5e8d4f" InformativeScreenshot="3dcda974097d7833e0ff0664460a9590.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/ZyvaJP_ooEaTXkEtT_N_aw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="1675cbb0-2c7a-4954-b158-95630182444c" ContentHash="8T7SGK0xskaMBo09aqx9Iw" CvElementArea="2463, 116, 53, 51" CvTextArea="2477, 134, 25, 17" CvType="Icon" DesignTimeRectangle="2465, 119, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='header-initials' parentid='app-main-container' tag='DIV' type='' aaname='BF' check:innerText='BF' /&gt;" Guid="54896be6-0bfc-475c-a3ab-5e8491f44d0c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANZSURBVGhD3ZpNaxNBGMf7sTzVb+KpH8FDSCg55KBUIRJIDk1LoNBD6kEvYotCBQ0UigiKiCI5FAJS2aQtm5q3+sg/u7OZzM7sy+yre/hBmOzOPL/Ms8/M7mZjsfhLRWJDbPjfiVVoNlvQ7e2UTHNC19djuroyaTi8IcOwwGe04Tscg2NxjthPFCILzWZ3NB5PloGywMOCc9EH+hL7D4u2EH5Z/MpicFFBn1FmTUvINP+4AokbjCGOG4RQQtPpPFJqhQVjYUwxDi8CC+ECFgdMC4wtxqMikBAuWHGQtEEMi8UdzeeruKzP64XEVygPMqORSZOJOvV4SU+hLNOMh8lMv/Zp9LBOv+9v0eXm1vIz2ngppRAuRrHjLGDVDoEvRe49WANtTArppxRKs5p5wWYHsyHKMPAdjsEsSYXSWGeCwmJCioki/Cyx41xCWKXFTrOExSVLN4dND6EktjNRiJRy2ByKHWZNpKKQhzVHhli2kWIQ8S3bealsIloLq1Yx+H5Cj0p1KskoN6j6tEvHX4Zr57zfkxwrUH89cI9lpx8vhs9o4283HCGtXQET2m5Tq/Oc9jlaOw07wAYdflydw4Qq1SbVanJab+RCKvjNqyOkVd0coRd0Ln5nDOmsY0vtnTntTEg1CzogdpcQ7vPFA33xFLoh40PXEnp2Shd2WxJCiN0lpFUQfIQGbw+s9Gr2EhVC7C4h/ulMYDyELvufqLtjXUOt0wunPQkhxO4SEg8KhFeVswvCk+5nGnDnOFVu210MluyuZjMM8QpJqtz+bodqFSv4xol7hpRw11sYXEJxp9ySb6/sGTykd7+sttRSLomiYBg/6eVjK/XYWpSEkLQoJFK2OaGDc6stCSFp2Y5/YeVSrtyh477VloSQdGGNtPUpNakhFoVmmyplK/hqs0d9+5wkhKRbn9g3pxCptal11KMfl6tzkhCSbk6BVmHIGL4guITyeoPnhfVEVSGUx1twP8R3SmtCQKvaZQRf3ZRCWsUhI2QvxlxCIE8PGlWoXohJhUCeK55Y2QIJ5eVhvQyvt3pKIaC1e0gYv7d5nkIgT2uTuObI8BUCeZAKIgMCCYEs088vzXgCC4FCvdbnSWOdUq0zfmgJgUL9NYanMH9eklGIv5fljcIJ/QOPbax3lL47WgAAAABJRU5ErkJggg==" InformativeScreenshot="ca736726d0a8eafbefb628b6b6447b7a.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/8NMKosEYMk2B3we2vOYiyQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'History'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="7abfc3b1-1f95-4a1d-a350-a66265d6c9fd" ContentHash="XKeCTDqMIEiWdmG2IwqgDA" CvElementArea="2507, 1050, 19, 21" CvType="ArrowButton" DesignTimeRectangle="2508, 1052, 18, 18" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='icon-angle-right' type='' tag='SPAN' aaname='' /&gt;" Guid="36cf51e5-1d21-45aa-b9a9-4c92681c59b9" InformativeScreenshot="3b4b7e5aa773b4f25e90c69f75f4839c.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/wcjYY_d9QkWcEKkkt3Aikg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="7abfc3b1-1f95-4a1d-a350-a66265d6c9fd" CvTextArea="2152, 1052, 51, 19" CvTextArgument="History" CvType="Text" DesignTimeRectangle="2153, 1050, 50, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='History' tag='SPAN' type='' class='' check:innerText='History' /&gt;" Guid="98df3558-3960-4ede-9419-b3eb5725211d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bet History'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="48617957-1cdf-44b9-a90e-5d78a2562618" ContentHash="kSgLZbeiF0id_B0St1F2mg" CvElementArea="2522, 408, 18, 20" CvType="ArrowButton" DesignTimeRectangle="2523, 410, 18, 18" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='icon-angle-right' type='' tag='SPAN' aaname='' /&gt;" Guid="56198ae2-0288-424e-baf1-5354863541fd" InformativeScreenshot="569251850cc1a9e3169b7c9b04fbb748.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/ckTSUPTeIU-dj1EhaI45sA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="48617957-1cdf-44b9-a90e-5d78a2562618" CvTextArea="2136, 410, 80, 19" CvTextArgument="Bet History" CvType="Text" DesignTimeRectangle="2137, 408, 78, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Bet History' tag='SPAN' type='' class='' check:innerText='Bet History' /&gt;" Guid="6a49daf7-70c8-405d-8bff-a0b9c6ba5856" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="22fc9791-3d97-4322-b75b-1982d78ba943" ContentHash="Eqo3IjaVo0uxXQhjSzWlcQ" DesignTimeRectangle="2117, 389, 181, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='' aaname='' check:innerText='03/01/2025 - 03/31/2025' /&gt;" Guid="01f830ba-65ce-4d2b-9e00-2c71eae451d5" InformativeScreenshot="4f7eab976676c894ff7fe2e92cf5d77a.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/6n2wRTacmUSi1tt2PDnGqQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="22fc9791-3d97-4322-b75b-1982d78ba943" CvElementArea="2114, 389, 18, 18" CvType="Icon" DesignTimeRectangle="2117, 391, 14, 14" FuzzySelectorArgument="&lt;webctrl class='icon-calendar' tag='SPAN' type='' aaname='' /&gt;" Guid="a220c738-f3ea-451d-9c50-9d8440f98bf9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVDhP3ZM/a8JAGIf9pAHJIhJIhoAE/0AFHSyCQwsp9iukQyI4JIiGUAfBD6BDQeJyELB0CS5PCQpN1Wva0kLp8MCPl+O5e+/eK6Xpnp+gdFr4Lr8tinHrXdxNrrbxaNQ94rO1l0TbiLtWE023UMsGqpblI5qJUjYPuXXP41YqShi3DWrDKbNwzEBvMhhFzMIjIxtNt3HDiGB4hdL2EZdFMY5lcDvP8jOryZTVLrfrbk0wWfOS5bmNYnk8fSS69hOEKMC/KRap1dy9yKiaxaJDawV8prV/KUoIOgaVvvc2OxKcvoXSkc7RnlQscXrd81c6odF7YCHen1Ly177O3xO9Av8ni9aB02goAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lifetime'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement]" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.hardrock.bet/home" CVScreenId="924860e2-176e-41c4-95ac-aa434f22886e" ContentHash="Y0tzD6w1PkOvyNqTZAAw7A" DesignTimeRectangle="2105, 570, 99, 38" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Lifetime' class='rdrStaticRangeLabel' tag='SPAN' type='' check:innerText='Lifetime' /&gt;" Guid="28b1ae4c-9bbc-4860-90a6-0744dee1331e" InformativeScreenshot="60e3cd12b7fccdd66f468396990605b2.png" Reference="nAvMRazxgk-J5Ewn8wCIjQ/ff12vlswF06aMznGt1NhBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="924860e2-176e-41c4-95ac-aa434f22886e" CvTextArea="2119, 543, 64, 15" CvTextArgument="Last 7 Days" CvType="Text" DesignTimeRectangle="2105, 531, 99, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last 7 Days' class='rdrStaticRangeLabel' tag='SPAN' type='' check:innerText='Last 7 Days' /&gt;" Guid="af8077b1-f4d5-4b8d-89a3-3eeef02c7322" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:BuildDataTable DataTable="[dt_HardLifetime]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1030,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date_x0020__x0026__x0020_Time&quot; msdata:DataType=&quot;Microsoft.VisualBasic.DateAndTime, Microsoft.VisualBasic.Core, Version=13.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Wager&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Paid&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Profit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName /&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+              <Assign sap:VirtualizedContainerService.HintSize="1030,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[dt_HardLifetime.Columns("Profit").expression]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">Paid-Wager</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_HardLifetime]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Wager'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Payout'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Date &amp;amp; Time'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='New column 3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.mb-currency.payout' name='Column1' attr='fulltext' /&gt;&lt;column css-selector='.mb-bet-time' name='Column3' attr='fulltext' /&gt;&lt;column exact='1' name='Column6' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='span' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1030,189" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="563e1263-5eb0-4f7a-a14f-b64dd8ce8041" Version="V4">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://app.hardrock.bet/home" DesignTimeRectangle="2101, -2784, 448, 111315" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='column' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-main-container' tag='DIV' /&gt;" Guid="ca861ac9-0d8a-41d6-a847-cba91e83022c" InformativeScreenshot="90d161ab10138b119c26f833415b21ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[dt_HardLifetime]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1030,141" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="./Output/HardRockIncome.xlsx" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 2576, 1408" BrowserType="Chrome" ContentHash="PGHWADbeXU6VECKennts0A" IconBase64="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" InformativeScreenshot="deb1c6d294ff6547d66d604bf6854b63.jpg" Reference="nAvMRazxgk-J5Ewn8wCIjQ/eD_Dzd75xkynKLuDbKU6kQ" Selector="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" Url="https://app.hardrock.bet/home" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

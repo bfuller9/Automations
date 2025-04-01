@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XN64JRF6BkaaL39D2PYkaQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" CvElementArea="2116, 341, 431, 50" CvType="InputBox" DesignTimeRectangle="2117, 342, 431, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='login-username' tag='INPUT' type='text' class='hr-input input-empty ' aaname='Email' /&gt;" Guid="3882d34c-3e5a-4a3c-b370-13483eb860dc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="14017226-35cd-44f1-be51-0f74f00d375e" DesignTimeRectangle="2132, 352, 58, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' type='' class='input-label' check:innerText='Email' /&gt;" Guid="9b9431bf-2f08-4fb7-9135-4d6e2b45ac7b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="36b13480a3cc7bfcde77fd604a7eee1e.png" xmlns="">0-r7KyLudeUiUWn36PkDD9g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

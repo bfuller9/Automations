@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kSgLZbeiF0id_B0St1F2mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="48617957-1cdf-44b9-a90e-5d78a2562618" CvElementArea="2522, 408, 18, 20" CvType="ArrowButton" DesignTimeRectangle="2523, 410, 18, 18" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='icon-angle-right' type='' tag='SPAN' aaname='' /&gt;" Guid="56198ae2-0288-424e-baf1-5354863541fd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="48617957-1cdf-44b9-a90e-5d78a2562618" CvTextArea="2136, 410, 80, 19" CvTextArgument="Bet History" CvType="Text" DesignTimeRectangle="2137, 408, 78, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Bet History' tag='SPAN' type='' class='' check:innerText='Bet History' /&gt;" Guid="6a49daf7-70c8-405d-8bff-a0b9c6ba5856" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="569251850cc1a9e3169b7c9b04fbb748.png" xmlns="">0HNmgbkxX6Eeo6tZFmnf3SQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="es4oWcabsk665FKCyF_iLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="ee84e701-83e4-453c-a633-95524b66fc15" CvElementArea="2436, 169, 79, 53" CvTextArea="2453, 187, 44, 19" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="2438, 171, 75, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='login-btn' tag='BUTTON' type='' class='hr-button hr-button-primary' aaname='Login' check:innerText='Login' /&gt;" Guid="0c490187-b688-4260-b855-407acc9363d8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="23e67724186462e02be9ec9b6fda65f6.png" xmlns="">0JWNUgdEQnUuwymeEUhzMkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

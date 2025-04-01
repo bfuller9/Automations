@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Y0tzD6w1PkOvyNqTZAAw7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="924860e2-176e-41c4-95ac-aa434f22886e" DesignTimeRectangle="2105, 570, 99, 38" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Lifetime' class='rdrStaticRangeLabel' tag='SPAN' type='' check:innerText='Lifetime' /&gt;" Guid="28b1ae4c-9bbc-4860-90a6-0744dee1331e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hard Rock Bet' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="924860e2-176e-41c4-95ac-aa434f22886e" CvTextArea="2119, 543, 64, 15" CvTextArgument="Last 7 Days" CvType="Text" DesignTimeRectangle="2105, 531, 99, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last 7 Days' class='rdrStaticRangeLabel' tag='SPAN' type='' check:innerText='Last 7 Days' /&gt;" Guid="af8077b1-f4d5-4b8d-89a3-3eeef02c7322" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="60e3cd12b7fccdd66f468396990605b2.png" xmlns="">0eVrB6qzpRUWaZ1ULqJ-vQA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

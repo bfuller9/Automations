@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Balance$76.42BF",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "ZyvaJP_ooEaTXkEtT_N_aw",
+  "Reference": "nAvMRazxgk-J5Ewn8wCIjQ/ZyvaJP_ooEaTXkEtT_N_aw",
+  "ParentRef": "nAvMRazxgk-J5Ewn8wCIjQ/eD_Dzd75xkynKLuDbKU6kQ",
+  "Created": "2025-03-31T16:24:47.5443127Z",
+  "Updated": "2025-03-31T16:24:47.5443127Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

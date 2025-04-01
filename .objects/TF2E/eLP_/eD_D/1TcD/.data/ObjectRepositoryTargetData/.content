@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="05vLJy6yp0eMSFPlVeezjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.hardrock.bet/home" CVScreenId="1b6a3c8f-7ee2-4fec-89ad-f4daa12cbdc7" CvElementArea="237, 269, 74, 42" CvTextArea="254, 284, 37, 12" CvTextArgument="Never" CvType="Button" DesignTimeRectangle="239, 271, 68, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Save password?' role='alert' /&gt;&lt;ctrl name='Never' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save password?' role='alert' /&gt;&lt;ctrl name='Never' role='push button' automationid='' check:text='Never' /&gt;" Guid="bcd73ad3-6b44-4f3e-8e49-b7be6ebca169" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Save password?' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cec9548e89c3fbd06c7fd107ea833bef.png" xmlns="">003lTiAsmUk6p1XruQVhbRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
